@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "upbeat-task-363918",
+  "private_key_id": "769a12973b29d6e262ca5a3330a09530056fb85f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDPBoYGlaLsvwKw\n/8Byzln2zweIyVp5D3fW5i6QiAZFTDH6jdz+bC1YCRm3qcYoT2MJZ1EvzGroBKaR\nu2gFZvIEHOnZ2N23wsLQi9xZm9Oh6zAcJTzNASS8cxWqBlSpALVOGr+P0p61jieh\nrpAifOWNAH7XiUfUbvE1YbPtz2WKdhwn8EttKwArRNG8VPwc76dwXGVFTg4YvBTK\niNlERmbE7kWbc0IOyqKnvsRpV3X6S8NpsnAzPZ8bNTZ2LgD1Ojq29zVBndsHVBVV\nsrlw77tZUWMNvZsSsXTkdtEX76gQPP1JX4UUrTh2gxtzyUdqm6zAbmK13Myo3rfs\nvBIWWFuTAgMBAAECggEAEbgpOIm44YfnybvaKPlofIDJJaK2T65MlOQsECAps+dg\nT7sHXe9nDNCalucSbYN99+FpSCy4PxZG0NUNg4ja0Lyjd2CMeZyojVkAidrrM5dX\nDXxScT7Wehq6O/dBanBZFE+jHcLqj/eUL3kqyl4495HsnrNtUSK9xSfmUpscbHal\nU6vzt36abYHAWj60QMOrxuXcSvOZgJhDgrbz487ye7xzTtbn/R1pGjmikgkl8J6T\na/Z2NmEJhhJpHbkE2V9C8LdfZrG4QO9+Jm29tUxyY5Ee8w8YF6gnNxIS9Dp5DDuO\n7TildACtjG7/6Xol4YDOy5TCMRC8DIrcq+pk9JuswQKBgQD23+EOefHZ9kXP3CAf\nhRa4wr5xA9qj0mrBwUjRyA4JS8nKd9Czyjj+8sWsUJ8R7mtPHpS/duaIR6FUch0j\n5eO5rO+eBMgYNFCzvbiMcJHrczUIdlrlEFbHl199FFJZiXvKzs4Srb/I7gmaQajg\nRlkR0JWlVOwDSBed+nvFrd2hWQKBgQDWrY+47cMxdZyWWjHjQAr86/mxhqSvBwNP\nAXhw3/J26HzRwzT0rdaLFDOYsI5nneVCdlschnXiWk4AjpZAzqX2Dnzn9BEjhFgw\nN3j7omAEWg3g0gN1BDq4iHvSijZpDj364uLdeFr1HHBsDwsS0XDmMRlnft4N9as8\nr+fICr16ywKBgQC/M+oU0jGUhH7RXEWs4+ETPBFPapK96swwQEjr4Sut23rwSxfj\nB65ZFyIuMUriEmweHStLlwU5a3Dx/GfBU92qAtya4E0xIeOXMktqygzZ9KKQaUpA\nuwTbFMwqDcEyA59TFhTYtqUhM+tQA6aN/S4i9A/SuxEIAZ/5BPUzx1MuEQKBgG3O\npT8gTsFTuV6mj/H/Zh9szHFjv4TPf3+/7s09n5X24TGiOcoVyTGmiaXGWXDisMvI\nIl564H2BV3itdml7yiQL0RQMIWAbZ8hx924u5hITxhmDEsWd/jM5jKxqid4+rLFR\nsF08HLpXa6G6KB3eB3OXFbl8iTR2vrnx+Aq4g6b1AoGBAMtBVobipM1y7iha/vXK\nlHuIzwBimCdMqXeS7FAWF2hGtu5o+S/WqeCNo5AXnFNDCF9Nc+WfefR0eWTuTO6N\n75gRVZoQ5WLFdmn686B/n9k0UM4QE4tE7Unwo/Pg4RRdkWDzDIPTq0qqvu0ga3Zo\ne63YuXd8tTU20n9BAM9eqY+q\n-----END PRIVATE KEY-----\n",
+  "client_email": "account@upbeat-task-363918.iam.gserviceaccount.com",
+  "client_id": "111657203982916128136",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/account%40upbeat-task-363918.iam.gserviceaccount.com"
+}
