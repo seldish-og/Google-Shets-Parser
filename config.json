@@ -1,0 +1,10 @@
+{
+    "psql_settings": {
+        "user": "test",
+        "pswd": "",
+        "host": "",
+        "port": "",
+        "db_name": ""
+    }
+
+}
