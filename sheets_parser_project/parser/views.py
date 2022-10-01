@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-# from google_sheets import google_sheets_api
+# from google_sheets import google_api
 
 
 def start_parser(request):
