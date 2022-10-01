@@ -1,4 +1,5 @@
 from pathlib import Path
+from configs.config import psql_settings
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -55,8 +56,12 @@ WSGI_APPLICATION = 'core.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': psql_settings()['name'],
+        'USER': psql_settings()['user'],
+        'PASSWORD': psql_settings()['pswd'],
+        'HOST': psql_settings()['host'],
+        'PORT': psql_settings()['port'],
     }
 }
 

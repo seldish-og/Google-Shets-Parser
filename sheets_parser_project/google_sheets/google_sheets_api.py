@@ -28,7 +28,8 @@ def get_sheet_data():
         range='A:E',
         majorDimension='ROWS'
     ).execute()
-    pprint(values)
+    print("hey")
+    # pprint(values)
     return values
 
 
