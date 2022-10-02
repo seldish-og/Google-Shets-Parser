@@ -1,15 +1,15 @@
 {
     "psql_settings": {
-        "user": "aurelian",
-        "pswd": "1234",
-        "host": "localhost",
-        "port": "5455",
-        "name": "db01"
+        "user": "",
+        "pswd": "",
+        "host": "",
+        "port": "",
+        "name": ""
     },
 
     "redis_settings": {
-        "host": "127.0.0.1",
-        "port": "16379"
+        "host": "",
+        "port": ""
     }
 
 }

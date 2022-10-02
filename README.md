@@ -1,6 +1,15 @@
-# Google-Shets-Parser
+# Google-Sheets-Parser
 
-App saves data from google sheets to PostgrsSql db with required formation
+# Документация
+
+## Как запустить проект
+
+1. Скачайте файлы проекта
+2. Создайте и запустите postgres и redis базы данных (например в Docker)
+3. В файле `sheets_parser_project/configs/config.json` заполните все поля своими данными
+4. `python manage.py migrate`
+5. `python manage.py runserver`
+6. в отдельном терминале `celery -A core worker -l INFO`
 
 # **Тестовое задание Python**
 
