@@ -44,4 +44,5 @@ def get_usd_price():
     except IndexError as index_error:
         responce = send_request_api(date=create_date(True))
         usd_price_formated = read_xml(responce)
+
     return float(usd_price_formated)

@@ -4,7 +4,7 @@ from re import U
 import httplib2
 import apiclient.discovery
 from oauth2client.service_account import ServiceAccountCredentials
-from currency_change import cbr_api
+from .currency_change import cbr_api
 
 basedir = os.path.abspath(os.path.dirname(__file__))
 CREDENTIALS_FILE = basedir+'/creds.json'
@@ -13,7 +13,7 @@ CREDENTIALS_FILE = basedir+'/creds.json'
 def add_rub_value(values):
     usd_price = cbr_api.get_usd_price()
     for row in values:
-        converted_usd_to_rub = round(int(row[2]) * usd_price, 3)
+        converted_usd_to_rub = (int(row[2]) * float(usd_price))
         row.append(converted_usd_to_rub)
     return values
 
@@ -40,6 +40,3 @@ def get_sheet_data():
     updated_values = add_rub_value(values=values)
 
     return updated_values
-
-
-pprint(get_sheet_data())
