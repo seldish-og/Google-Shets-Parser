@@ -13,7 +13,7 @@ CREDENTIALS_FILE = basedir+'/creds.json'
 def add_rub_value(values):
     usd_price = cbr_api.get_usd_price()
     for row in values:
-        converted_usd_to_rub = (int(row[2]) * float(usd_price))
+        converted_usd_to_rub = round(int(row[2]) * float(usd_price), 2)
         row.append(converted_usd_to_rub)
     return values
 

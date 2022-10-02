@@ -3,6 +3,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .models import OrderModel
 from google_api import google_sheets_parser
+import time
 
 
 def add_data_db(data):
@@ -16,21 +17,21 @@ def add_data_db(data):
         to_save.save()
 
 
-def update_data_db(data):
-    to_update = OrderModel.objects.filter(id=2).update("")
-
-
 def start_parser(request):
     all_entries = OrderModel.objects.all()
-    sheets_data = google_sheets_parser.get_sheet_data()
 
-    print(all_entries)
-    pprint(sheets_data)
+    # sheets_data = google_sheets_parser.get_sheet_data()
 
     if not all_entries:
-        add_data_db(sheets_data)
+        # add_data_db(sheets_data)
+        print("ss")
+        # time.sleep(3600)
     else:
-        update_data_db(sheets_data)
+        # OrderModel.objects.all().delete()
+        # add_data_db(sheets_data)
+        print("ss")
 
-    html = "<html><h1>SHEETS_PARSER HAS BEEN STARTED</h1></html>"
+        # time.sleep(3600)
+
+    html = "<html><h1>PARSER STOPPED, CHECK ERRORS</h1></html>"
     return HttpResponse(html)
