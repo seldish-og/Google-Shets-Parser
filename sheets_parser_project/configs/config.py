@@ -13,6 +13,8 @@ def psql_settings():
     return data["psql_settings"]
 
 
+def redis_settings():
+    return data["redis_settings"]
 # print(type(psql_settings()['user']))
 # USER = data["psql_settings"]["user"]
 # PSWD = data["psql_settings"]["pswd"]

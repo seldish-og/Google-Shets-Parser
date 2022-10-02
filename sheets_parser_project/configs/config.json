@@ -5,6 +5,11 @@
         "host": "localhost",
         "port": "5455",
         "name": "db01"
+    },
+
+    "redis_settings": {
+        "host": "127.0.0.1",
+        "port": "16379"
     }
 
 }

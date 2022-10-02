@@ -1,5 +1,5 @@
 from pathlib import Path
-from configs.config import psql_settings
+from configs.config import psql_settings, redis_settings
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -61,6 +61,8 @@ DATABASES = {
         'PORT': psql_settings()['port'],
     }
 }
+
+CELERY_BROKER_URL = f"redis://{redis_settings()['host']}:{redis_settings()['port']}/0"
 
 
 AUTH_PASSWORD_VALIDATORS = [
