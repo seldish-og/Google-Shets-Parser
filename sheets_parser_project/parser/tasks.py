@@ -23,15 +23,13 @@ def test(request):
     while True:
         all_entries = OrderModel.objects.all()
         print(all_entries)
-        # sheets_data = google_sheets_parser.get_sheet_data()
+        sheets_data = google_sheets_parser.get_sheet_data()
 
         if not all_entries:
-            # add_data_db(sheets_data)
-            print("ss")
-            # time.sleep(3600)
+            add_data_db(sheets_data)
+            time.sleep(3600)
         else:
-            # OrderModel.objects.all().delete()
-            # add_data_db(sheets_data)
-            print("ss")
+            OrderModel.objects.all().delete()
+            add_data_db(sheets_data)
 
-            # time.sleep(3600)
+            time.sleep(3600)
