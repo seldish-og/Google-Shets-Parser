@@ -6,7 +6,7 @@
 
 1. Скачайте файлы проекта
 2. Создайте и запустите postgres и redis базы данных (например в Docker)
-3. В файле `sheets_parser_project/configs/config.json` заполните все поля своими данными
+3. В файле `sheets_parser_project/core/.env` заполните все поля своими данными
 4. в папке проекта `python -m venv venv`
 5. `pip install requirements.txt`
 6. `python manage.py migrate`
