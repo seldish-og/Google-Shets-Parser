@@ -22,7 +22,6 @@ def add_data_db(data):
 def test(request):
     while True:
         all_entries = OrderModel.objects.all()
-        print(all_entries)
         sheets_data = google_sheets_parser.get_sheet_data()
 
         if not all_entries:

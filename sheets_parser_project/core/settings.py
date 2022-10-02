@@ -1,11 +1,14 @@
 from pathlib import Path
-from configs.config import psql_settings, redis_settings
+import environ
+
+env = environ.Env()
+environ.Env.read_env()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-va2+s%b7_$-f&2ifnpan%7@a6ca)tle-4s154(b60y!4v$2ibf'
 
-DEBUG = True
+DEBUG = env('DEBUG')
 
 ALLOWED_HOSTS = []
 
@@ -54,15 +57,15 @@ WSGI_APPLICATION = 'core.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': psql_settings()['name'],
-        'USER': psql_settings()['user'],
-        'PASSWORD': psql_settings()['pswd'],
-        'HOST': psql_settings()['host'],
-        'PORT': psql_settings()['port'],
+        'NAME': env('POSTGRES_DB'),
+        'USER': env('POSTGRES_USER'),
+        'PASSWORD': env('POSTGRES_PASSWORD'),
+        'HOST': env('POSTGRES_HOST'),
+        'PORT': env('POSTGRES_PORT'),
     }
 }
 
-CELERY_BROKER_URL = f"redis://{redis_settings()['host']}:{redis_settings()['port']}/0"
+CELERY_BROKER_URL = f"redis://{env('REDIS_HOST')}:{env('REDIS_PORT')}/0"
 
 
 AUTH_PASSWORD_VALIDATORS = [
@@ -85,7 +88,7 @@ LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'
 
 USE_I18N = True
-
+POSTGRES_DB
 USE_TZ = True
 
 
