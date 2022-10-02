@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  db:
+    container_name: db
+    image: postgres:13-alpine
+    env_file:
+      - ./sheets_parser_project/core/.env
+    volumes:
+      - ./postgres_gata:/var/lib/postgresql/data
+    ports:
+      - 5455:5455
+
+  cache:
+      env_file:
+        - ./sheets_parser_project/core/.env
+      image: redis:6.2-alpine
+      restart: always
+      ports:
+        - '6379:6379'
+      command: redis-server --save 20 1 --loglevel warning --requirepass eYVX7EwVmmxKPCDmwMtyKVge8oLd2t81
+      volumes: 
+        - cache:/data
